@@ -48,23 +48,6 @@ async function addContact(name, email, phone) {
     ("Such contact already exists");
   }
 }
-// async function addContact(name, email, phone) {
-//   const contactsData = await listContacts();
-//   const newContact = {
-//     id: uuidv4(),
-//     name: name,
-//     email: email,
-//     phone: phone,
-//   };
-//   const filter = contactsData.filter((contact) => contact.id === newContact.id);
-//   if (filter.length === 0) {
-//   const li= JSON.stringify(contactsData.push(newContact));
-//     console.log("ddd",li);
-//     // fs.writeFile(contactsPath, JSON.stringify(contactsData));
-//     return contactsData;
-//   }
-//   console.log(contactsData.filter((contact) => contact.id === newContact.id));
-// }
-// addContact("jora", "email@gmail.com", "2222-222");
+
 
 module.exports = { listContacts, getContactById, removeContact, addContact };
